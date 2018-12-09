@@ -11,7 +11,7 @@ ADD addon/Znuny4OTRS-MarkTicketSeenUnseen-1.1.0.opm Znuny4OTRS-MarkTicketSeenUns
 ADD addon/Znuny4OTRS-SortByLastContact-3.2.1.opm Znuny4OTRS-SortByLastContact-3.2.1.opm
 ADD addon/FAQ-4.0.91.opm FAQ-4.0.91.opm
 
-RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm --allowerasing
 RUN yum install -y epel-release && \ 
     yum update -y && \
     yum -y install cronie httpd httpd-devel mysql mod_perl mod_ssl \ 
